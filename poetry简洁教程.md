@@ -84,6 +84,7 @@ poetry build
 # 发布到PyPI
 poetry publish
 
+
 # 使用私有仓库
 poetry config repositories.my-repo https://example.com/simple
 poetry publish -r my-repo
@@ -94,6 +95,11 @@ poetry publish -r my-repo
 ## 6️⃣ 进阶技巧
 
 ```bash
+# 查看已安装python版本列表
+poetry python list
+# 安装特定版本python
+poetry python install 3.12
+
 # 导出requirements.txt
 poetry export -f requirements.txt --output requirements.txt
 
